@@ -1,0 +1,44 @@
+= SvgWeb for Ruby on Rails
+
+SvgWeb is a plugin for Ruby on Rails based on JavaScript library which provides SVG support on many browsers, including Internet Explorer, Firefox, and Safari. Using the library plus native SVG support you can instantly target ~95% of the existing installed web base.
+
+Once dropped in you get partial support for SVG 1.1, SVG Animation (SMIL), Fonts, Video and Audio, DOM and style scripting through JavaScript, and more in about a 60K library. Your SVG content can be embedded directly into normal HTML 5 or through the OBJECT tag. If native SVG support is already present in the browser than that is used, though you can override this and have the SVG Web toolkit handle things instead. No downloads or plugins are necessary other than Flash which is used for the actual rendering, so its very easy to use and incorporate into an existing web site.
+
+== Installation
+
+  script/plugin install git://github.com/imanel/svg_web.git
+
+  rake svg_web:install
+
+or, if you are updating a previously installed version
+
+  rake tiny_mce:update
+
+== Usage
+
+To use SvgWeb, you must drop a script tag into your HTML page. This must be the first script tag on your page:
+
+  svg_include_tag  
+
+Next, to embed image on page use helper:
+
+  svg_tag "example.svg"
+
+After that file "public/svgs/example.svg" will be embedded. You can also provide subdirectories or other directories - exactly like image_tag helper.
+
+  svg_tag "subdirectory/example.svg"
+  svg_tag "/images/svg_subdirectory/example.svg"
+
+Additionally any html attribute may by added:
+
+  svg_tag "example.svg", :id => "exampleId", :width => "300", :height => "200"
+  
+For more info about usage of script please read:
+
+http://svgweb.googlecode.com/svn/trunk/docs/UserManual.html
+
+== Credits
+
+JavaScript and corresponding files are owned by Google and released under Apache License 2.0.
+
+Everything else was made by Bernard "Imanel" Potocki and released under the MIT license.
