@@ -8,11 +8,13 @@ Once dropped in you get partial support for SVG 1.1, SVG Animation (SMIL), Fonts
 
   script/plugin install git://github.com/imanel/svg_web.git
 
+Next:
+
   rake svg_web:install
 
 or, if you are updating a previously installed version
 
-  rake tiny_mce:update
+  rake svg_web:update
 
 == Usage
 
