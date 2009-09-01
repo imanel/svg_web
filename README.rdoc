@@ -41,6 +41,6 @@ http://svgweb.googlecode.com/svn/trunk/docs/UserManual.html
 
 == Credits
 
-JavaScript and corresponding files are owned by Google and released under Apache License 2.0.
+JavaScript and corresponding files are community project and released under Apache License 2.0. See http://code.google.com/p/svgweb/
 
 Everything else was made by Bernard "Imanel" Potocki and released under the MIT license.
