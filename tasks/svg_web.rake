@@ -1,12 +1,12 @@
-VERSION = '2009-08-20-B'
- 
+VERSION = '2010-04-09-Dracolisk'
+
 namespace :svg_web do
   desc 'Install the SvgWeb scripts into the public/javascripts directory of this application'
   task :install => ['svg_web:add_or_replace_svg_web']
- 
+
   desc 'Update the SvgWeb scripts installed at public/javascripts/svg_web for this application'
   task :update => ['svg_web:add_or_replace_svg_web']
- 
+
   task :add_or_replace_svg_web do
     require 'fileutils'
     dest = "#{RAILS_ROOT}/public/javascripts/svg_web"
