@@ -1,4 +1,4 @@
-VERSION = '2010-04-09-Dracolisk'
+VERSION = '2010-08-10-Owlephant'
 
 namespace :svg_web do
   desc 'Install the SvgWeb scripts into the public/javascripts directory of this application'
