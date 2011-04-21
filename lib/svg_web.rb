@@ -13,5 +13,21 @@ module SvgWeb
     page << "\n<!--<![endif]-->"
     page
   end
-  
+
+  def embed_svg( content, options = {} )
+    page =  '<script type="image/svg+xml">'
+    page << '<![CDATA['
+    page << content || "NO CONTENT"
+    page << ']]>'
+    page << '</script>'
+
+    if options[:alt]
+      page << '<noscript'
+      page << "  #{options[:alt]}"
+      page << '</noscript>'
+    end
+
+    page
+  end
 end
+
